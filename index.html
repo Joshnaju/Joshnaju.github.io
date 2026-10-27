@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joshna J U – Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef0f7;--surface:#ffffff;--ink:#1a1e3a;--muted:#555b7a;--accent:#3a4cdc;--accent-ink:#ffffff;--tint:#dfe3fb;--line:#cfd3e6;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14172b;--surface:#1d2140;--ink:#eceefb;--muted:#a3a9cc;--accent:#8b98ff;--accent-ink:#14172b;--tint:#2a3066;--line:#33385f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14172b;--surface:#1d2140;--ink:#eceefb;--muted:#a3a9cc;--accent:#8b98ff;--accent-ink:#14172b;--tint:#2a3066;--line:#33385f;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.08;margin:0}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-weight:500;font-size:15px}
+nav .links{display:flex;gap:22px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 72px}
+.hero h1{font-size:clamp(2.6rem,8vw,5.6rem);font-weight:800;letter-spacing:-.03em;max-width:12ch}
+.hero p.lead{font-size:clamp(1.1rem,2.4vw,1.35rem);max-width:56ch;margin:26px 0 0;color:var(--muted)}
+.hero p.lead strong{color:var(--ink);font-weight:500}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:500;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--ink)}
+.btn:hover{transform:translateY(-1px)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:700;letter-spacing:-.02em;margin-bottom:30px}
+.projects{display:grid;gap:22px}
+.proj{background:var(--surface);border-radius:18px;padding:30px;display:grid;gap:14px}
+.proj.big{grid-template-columns:1fr;border-left:8px solid var(--accent)}
+.proj h3{font-size:1.5rem;font-weight:700}
+.proj p{margin:0;color:var(--muted);max-width:62ch}
+.tags{display:flex;gap:8px;flex-wrap:wrap;padding:0;margin:0;list-style:none}
+.tags li{background:var(--tint);padding:4px 12px;border-radius:99px;font-size:14px;font-weight:500}
+.proj a.repo{font-weight:500;text-decoration-thickness:2px;text-underline-offset:4px;color:var(--accent);width:max-content}
+.small{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.small .proj{border-radius:14px;padding:24px}
+.small h3{font-size:1.2rem}
+.job{display:grid;grid-template-columns:200px 1fr;gap:12px 36px}
+.job .when{color:var(--muted);font-weight:500}
+.job h3{font-size:1.35rem;font-weight:700}
+.job ul{margin:14px 0 0;padding-left:20px;max-width:64ch}
+.job li{margin-bottom:8px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
+.skills h3{font-size:1.05rem;margin-bottom:12px}
+.edu{margin-top:44px;display:grid;grid-template-columns:200px 1fr;gap:12px 36px}
+.edu h3{font-size:1.2rem}
+.edu p{margin:4px 0 0;color:var(--muted)}
+.contact h2{max-width:16ch}
+.contact p{max-width:52ch;color:var(--muted);margin:0 0 26px}
+footer{padding:30px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:700px){.job,.edu{grid-template-columns:1fr}.proj{padding:22px}.hero{padding:30px 0 52px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main">
+  <strong>Joshna J U</strong>
+  <div class="links"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</nav>
+
+<header class="hero">
+  <h1>Full stack developer building AI&#8209;powered web apps.</h1>
+  <p class="lead">I’m Joshna, based in Trivandrum, Kerala. I spent two years building Angular and Node.js applications at AdroitMinds Software Labs, and I now build <strong>Django and React apps that answer questions from your documents</strong> using RAG.</p>
+  <div class="cta">
+    <a class="btn primary" href="#projects">See my projects</a>
+    <a class="btn ghost" href="https://github.com/Joshnaju" rel="noopener">GitHub profile</a>
+  </div>
+</header>
+</div>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="projects">
+    <article class="proj big">
+      <h3>AI Study Assistant</h3>
+      <p>Upload a PDF, TXT or DOCX file, then ask questions about it. The assistant answers from your document and can generate a summary or multiple-choice questions. Built during my training at Faith InfoTech Academy.</p>
+      <ul class="tags"><li>React.js</li><li>Django REST Framework</li><li>RAG</li><li>ChromaDB</li><li>OpenAI API</li><li>Agentic AI</li><li>JWT</li><li>Bootstrap</li></ul>
+      <a class="repo" href="https://github.com/Joshnaju/ai-study-assistant" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="proj big">
+      <h3>Chatvocate</h3>
+      <p>A legal chatbot that answers questions based on the Indian Penal Code. It retrieves the relevant sections, chunks the source text, and replies with context-aware answers.</p>
+      <ul class="tags"><li>Python</li><li>Django REST Framework</li><li>React.js</li><li>OpenAI API</li><li>ChromaDB</li><li>RAG</li></ul>
+      <a class="repo" href="https://github.com/Joshnaju/chatvocate-ipc-legal-chatbot" rel="noopener">View on GitHub</a>
+    </article>
+    <div class="small">
+      <article class="proj">
+        <h3>Workforce Administration Portal</h3>
+        <p>A full stack portal for managing workforce records.</p>
+        <a class="repo" href="https://github.com/Joshnaju/workforce-administration-portal" rel="noopener">View on GitHub</a>
+      </article>
+      <article class="proj">
+        <h3>Healthcare Management Portal</h3>
+        <p>A full stack portal for healthcare management.</p>
+        <a class="repo" href="https://github.com/Joshnaju/healthcare-management-portal" rel="noopener">View on GitHub</a>
+      </article>
+    </div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="when">Feb 2022 – Oct 2023<br>2 years</div>
+    <div>
+      <h3>Full Stack Developer, AdroitMinds Software Labs</h3>
+      <ul>
+        <li>Built responsive user interfaces in Angular, TypeScript, HTML and CSS.</li>
+        <li>Built and integrated REST APIs with Node.js, Express.js and MongoDB.</li>
+        <li>Implemented authentication and role-based authorization.</li>
+        <li>Merged separate crew and user tables into a single users table with a user_type field, including the database migration.</li>
+        <li>Debugged application issues and worked with the team in Agile sprints.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="job" style="margin-top:40px">
+    <div class="when">May 2026 – present</div>
+    <div>
+      <h3>Training, Faith InfoTech Academy</h3>
+      <ul>
+        <li>Python, Django, React.js and MySQL.</li>
+        <li>Data Science and Generative AI, including RAG and Agentic AI.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Frontend</h3><ul class="tags"><li>Angular</li><li>React.js</li><li>TypeScript</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul></div>
+    <div><h3>Backend</h3><ul class="tags"><li>Node.js</li><li>Express.js</li><li>Python</li><li>Django REST Framework</li><li>JWT</li></ul></div>
+    <div><h3>Databases</h3><ul class="tags"><li>MongoDB</li><li>MySQL</li><li>SQL</li><li>ChromaDB</li></ul></div>
+    <div><h3>AI</h3><ul class="tags"><li>RAG</li><li>OpenAI API</li><li>Agentic AI</li><li>Generative AI</li></ul></div>
+  </div>
+  <div class="edu">
+    <div class="when" style="color:var(--muted);font-weight:500">Education</div>
+    <div><h3>B.E. Electronics and Communication Engineering</h3><p>Anna University</p></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Let’s build something together.</h2>
+  <p>I’m open to Angular, Full Stack and Python developer roles, especially on AI-powered applications. I’m available to join immediately.</p>
+  <a class="btn primary" href="https://github.com/Joshnaju" rel="noopener">Find me on GitHub</a>
+</div></section>
+
+<footer><div class="wrap">Joshna J U · Trivandrum, Kerala, India</div></footer>
+</body>
+</html>
