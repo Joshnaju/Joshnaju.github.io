@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joshna J U – Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4fc;--surface:#fff;--ink:#1d1745;--muted:#5d5880;--violet:#5a3ff0;--violet-ink:#fff;--mint:#27c9a0;--tint:#e9e4ff;--line:#ddd8f2;--glow1:#d9d0ff;--glow2:#c8f5e8;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#130f2e;--surface:#1d1845;--ink:#efecff;--muted:#aaa5d4;--violet:#9d8cff;--violet-ink:#130f2e;--mint:#4fe0b8;--tint:#2b2468;--line:#342d6b;--glow1:#2a2170;--glow2:#0f3d3a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#130f2e;--surface:#1d1845;--ink:#efecff;--muted:#aaa5d4;--violet:#9d8cff;--violet-ink:#130f2e;--mint:#4fe0b8;--tint:#2b2468;--line:#342d6b;--glow1:#2a2170;--glow2:#0f3d3a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px;font-weight:500;font-size:15px}
+.bar strong{font-family:"Bricolage Grotesque",sans-serif;font-size:18px}
+.links{display:flex;gap:22px;flex-wrap:wrap}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+.hero{background:radial-gradient(60% 70% at 85% 10%,var(--glow1),transparent 70%),radial-gradient(50% 60% at 0% 100%,var(--glow2),transparent 70%);padding:72px 0 84px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.5rem,6vw,4.6rem);font-weight:800;letter-spacing:-.03em}
+.lead{font-size:1.18rem;color:var(--muted);max-width:50ch;margin:24px 0 0}
+.lead b{color:var(--ink);font-weight:700}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-block;padding:13px 22px;border-radius:12px;font-weight:700;text-decoration:none;border:2px solid var(--violet);transition:transform .15s}
+.btn.primary{background:var(--violet);color:var(--violet-ink)}
+.btn:hover{transform:translateY(-2px)}
+.flow{background:var(--surface);border-radius:22px;padding:28px 28px 22px;box-shadow:0 24px 60px -24px rgba(60,40,160,.35);border:1px solid var(--line)}
+.flow h2{font-size:1.05rem;margin-bottom:18px}
+.flow ol{list-style:none;margin:0;padding:0;position:relative}
+.flow ol::before{content:"";position:absolute;left:17px;top:18px;bottom:18px;width:2px;background:linear-gradient(var(--violet),var(--mint))}
+.flow li{position:relative;padding:0 0 18px 54px;opacity:0;animation:in .5s ease forwards}
+.flow li:nth-child(2){animation-delay:.25s}.flow li:nth-child(3){animation-delay:.5s}.flow li:nth-child(4){animation-delay:.75s}
+.flow li i{position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--violet);color:var(--violet-ink);display:grid;place-items:center;font:700 15px "DM Sans",sans-serif}
+.flow li:last-child i{background:var(--mint);color:#0b2a24}
+.flow li b{display:block;font-size:1rem}
+.flow li span{color:var(--muted);font-size:.95rem;line-height:1.45;display:block}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+section{padding:72px 0}
+h2.title{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.sub{color:var(--muted);margin:0 0 36px;max-width:60ch}
+.feat{display:grid;gap:26px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.card .band{height:10px;background:linear-gradient(90deg,var(--violet),var(--mint))}
+.card .in{padding:30px 32px 28px;display:grid;gap:16px}
+.card h3{font-size:1.65rem;font-weight:700}
+.card .org{color:var(--muted);font-size:.95rem;margin-top:-8px}
+.card ul.pts{margin:0;padding-left:20px;max-width:70ch}
+.card ul.pts li{margin-bottom:6px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;padding:0;margin:0;list-style:none}
+.tags li{background:var(--tint);padding:4px 13px;border-radius:99px;font-size:14px;font-weight:500}
+.repo{font-weight:700;color:var(--violet);text-underline-offset:4px;text-decoration-thickness:2px;width:max-content}
+.duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
+.duo .card h3{font-size:1.3rem}
+.duo .card .in{padding:24px 26px}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.tl{position:relative;padding-left:34px;display:grid;gap:44px}
+.tl::before{content:"";position:absolute;left:7px;top:8px;bottom:0;width:2px;background:var(--line)}
+.tl article{position:relative}
+.tl article::before{content:"";position:absolute;left:-34px;top:7px;width:16px;height:16px;border-radius:50%;background:var(--violet);box-shadow:0 0 0 5px var(--tint)}
+.when{color:var(--violet);font-weight:700;font-size:.95rem}
+.tl h3{font-size:1.4rem;margin:4px 0 2px}
+.tl .org{color:var(--muted);margin:0 0 14px}
+.tl ul{margin:0;padding-left:20px;max-width:72ch}
+.tl li{margin-bottom:8px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
+.skills div{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+.skills h3{font-size:1.05rem;margin-bottom:12px}
+.trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;margin-top:48px}
+.trio h3{font-size:1.1rem;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--line)}
+.item{margin-bottom:18px}
+.item b{display:block;line-height:1.35;margin-bottom:2px}
+.item span{display:block;color:var(--muted);font-size:.95rem}
+.contact .box{background:var(--violet);color:var(--violet-ink);border-radius:28px;padding:56px 44px;text-align:left}
+.contact h2{font-size:clamp(1.9rem,4.5vw,3rem);font-weight:800;letter-spacing:-.02em;max-width:18ch}
+.contact p{max-width:52ch;margin:16px 0 28px;opacity:.9}
+.contact .row{display:flex;gap:12px;flex-wrap:wrap}
+.contact .btn{background:var(--violet-ink);color:var(--violet);border-color:var(--violet-ink)}
+.contact .btn.o{background:transparent;color:var(--violet-ink)}
+footer{padding:28px 0 44px;color:var(--muted);font-size:14px}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr;gap:40px}.hero{padding:44px 0 56px}.card .in{padding:24px 22px}.contact .box{padding:38px 26px}section{padding:52px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.flow li{animation:none;opacity:1}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <strong>Joshna J U</strong>
+  <nav class="links" aria-label="Main"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <h1>I build full stack apps that read your documents and answer back.</h1>
+    <p class="lead">I’m Joshna, a software engineer in Trivandrum. I spent two years shipping <b>Angular and Node.js products</b> at AdroitMinds, and now I build <b>Django and React apps with RAG and agentic AI</b>.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <aside class="flow" aria-label="How my RAG apps work">
+    <h2>How my RAG apps answer a question</h2>
+    <ol>
+      <li><i>1</i><b>Extract</b><span>Pull the text out of PDF, TXT and DOCX files.</span></li>
+      <li><i>2</i><b>Chunk and embed</b><span>Split it into pieces and store vector embeddings in ChromaDB.</span></li>
+      <li><i>3</i><b>Search</b><span>Find the passages closest in meaning to the question.</span></li>
+      <li><i>4</i><b>Answer</b><span>Send them to the OpenAI API for a grounded reply.</span></li>
+    </ol>
+  </aside>
+</div></header>
+
+<section id="projects"><div class="wrap">
+  <h2 class="title">Projects</h2>
+  <p class="sub">Built during my Python full stack and Generative AI training at Faith InfoTech Academy.</p>
+  <div class="feat">
+    <article class="card"><div class="band"></div><div class="in">
+      <h3>AI Study Assistant</h3>
+      <ul class="pts">
+        <li>Upload PDF, TXT and DOCX files and ask context-aware questions using RAG.</li>
+        <li>Text extraction, chunking, vector embeddings and semantic search with ChromaDB.</li>
+        <li>An agentic workflow where the AI picks and calls the right tools to search your study material.</li>
+        <li>React interface with JWT login, document management, chat history, and Summary and MCQ generation.</li>
+      </ul>
+      <ul class="tags"><li>React.js</li><li>Django REST Framework</li><li>RAG</li><li>ChromaDB</li><li>OpenAI API</li><li>Agentic AI</li><li>JWT</li><li>Bootstrap</li></ul>
+      <a class="repo" href="https://github.com/Joshnaju/ai-study-assistant" rel="noopener">View on GitHub</a>
+    </div></article>
+    <article class="card"><div class="band"></div><div class="in">
+      <h3>Chatvocate: IPC Legal Assistant</h3>
+      <ul class="pts">
+        <li>A chatbot that answers questions on the Indian Penal Code from IPC documents stored in ChromaDB.</li>
+        <li>Responses grounded in the retrieved sections, generated with the OpenAI API.</li>
+        <li>Conversation memory, so follow-up questions are understood in context.</li>
+      </ul>
+      <ul class="tags"><li>React.js</li><li>Django REST Framework</li><li>RAG</li><li>ChromaDB</li><li>OpenAI API</li></ul>
+      <a class="repo" href="https://github.com/Joshnaju/chatvocate-ipc-legal-chatbot" rel="noopener">View on GitHub</a>
+    </div></article>
+    <div class="duo">
+      <article class="card"><div class="band"></div><div class="in">
+        <h3>Workforce Administration Portal</h3>
+        <p style="margin:0;color:var(--muted)">A full stack HR portal managing employees, projects and departments, with JWT-secured REST APIs, React CRUD screens and automated Django unit tests.</p>
+        <ul class="tags"><li>Python</li><li>Django REST Framework</li><li>React.js</li><li>MySQL</li><li>JWT</li><li>Bootstrap</li></ul>
+        <a class="repo" href="https://github.com/Joshnaju/workforce-administration-portal" rel="noopener">View on GitHub</a>
+      </div></article>
+      <article class="card"><div class="band"></div><div class="in">
+        <h3>Healthcare Management Portal</h3>
+        <p style="margin:0;color:var(--muted)">A role-based hospital system with Doctor, Receptionist, Pharmacy and Laboratory modules, secured with JWT authentication.</p>
+        <ul class="tags"><li>Python</li><li>Django REST Framework</li><li>React.js</li><li>MySQL</li><li>JWT</li><li>Bootstrap</li></ul>
+        <a class="repo" href="https://github.com/Joshnaju/healthcare-management-portal" rel="noopener">View on GitHub</a>
+      </div></article>
+    </div>
+  </div>
+</div></section>
+
+<section id="experience" class="alt"><div class="wrap">
+  <h2 class="title">Experience</h2>
+  <p class="sub">Two years of production work, then structured training in Python, data science and Generative AI.</p>
+  <div class="tl">
+    <article>
+      <div class="when">Feb 2022 – Oct 2023</div>
+      <h3>Software Engineer</h3>
+      <p class="org">AdroitMinds Software Labs, Technopark, Trivandrum</p>
+      <ul>
+        <li>Built responsive single-page apps for 3 production products (FCS Compliance Tracker, YourCrew and a church engagement platform) with Angular, TypeScript, Node.js, Express.js and MongoDB.</li>
+        <li>Developed the Angular admin CMS for videos, podcasts, announcements and daily messages, using reusable components and forms.</li>
+        <li>Built real-time chat and notification modules across the Angular frontend and Node.js backend.</li>
+        <li>Implemented authentication and role-based authorization with secure Express.js APIs.</li>
+        <li>Integrated the Vimeo API for video uploads and AWS S3 for podcast and audio storage.</li>
+        <li>Added server-side PDF generation so users can download documents built from application data.</li>
+        <li>Consolidated separate crew and user collections into one users collection with a user_type field, keeping data integrity.</li>
+        <li>Tested critical endpoints in Postman and delivered in Agile sprints with Git and Jira/ClickUp.</li>
+      </ul>
+    </article>
+    <article>
+      <div class="when">May 2026 – Oct 2026</div>
+      <h3>Python Full Stack, Data Science and Generative AI with Agentic AI</h3>
+      <p class="org">Faith InfoTech Academy, Technopark, Trivandrum</p>
+      <ul>
+        <li>Project-based training in Python, Django, Django REST Framework, React.js and MySQL.</li>
+        <li>Hands-on Data Science, Machine Learning, Deep Learning, Generative AI and Agentic AI.</li>
+      </ul>
+    </article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2 class="title">Skills</h2>
+  <p class="sub">The tools I use most, grouped by what they do.</p>
+  <div class="skills">
+    <div><h3>Frontend</h3><ul class="tags"><li>Angular</li><li>React.js</li><li>TypeScript</li><li>JavaScript (ES6+)</li><li>HTML5</li><li>CSS3</li><li>Tailwind CSS</li><li>Bootstrap</li><li>Angular Material</li><li>PrimeNG</li><li>Axios</li></ul></div>
+    <div><h3>Backend</h3><ul class="tags"><li>Node.js</li><li>Express.js</li><li>Python</li><li>Django</li><li>Django REST Framework</li><li>REST APIs</li><li>JWT</li></ul></div>
+    <div><h3>Databases and cloud</h3><ul class="tags"><li>MongoDB</li><li>MySQL</li><li>SQLite</li><li>AWS (EC2, S3, RDS)</li><li>CI/CD basics</li></ul></div>
+    <div><h3>Generative AI</h3><ul class="tags"><li>RAG</li><li>ChromaDB</li><li>LangChain</li><li>NLP</li><li>Agentic AI</li></ul></div>
+    <div><h3>Data science and ML</h3><ul class="tags"><li>NumPy</li><li>pandas</li><li>scikit-learn</li><li>TensorFlow/Keras</li><li>PyTorch</li><li>CNN</li><li>Matplotlib</li><li>Seaborn</li><li>Power BI</li></ul></div>
+    <div><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>GitLab</li><li>Jira</li><li>ClickUp</li><li>Postman</li><li>VS Code</li><li>Studio 3T</li><li>GitHub Copilot</li><li>Claude</li><li>Gemini</li></ul></div>
+  </div>
+  <div class="trio">
+    <div><h3>Education</h3><div class="item"><b>B.E. Electronics and Communication Engineering</b><span>Anna University, Nagercoil, 2015 – 2019</span><span>CGPA 7.9</span></div></div>
+    <div><h3>Certifications</h3><div class="item"><b>Frontend Development using Angular</b><span>MashupStack, 2021</span><span>Built a forum application.</span></div><div class="item"><b>.NET Technologies</b><span>CDAC, 2019</span><span>Built an online shopping website.</span></div></div>
+    <div><h3>Languages</h3><ul class="tags"><li>English</li><li>Tamil</li><li>Malayalam</li><li>Hindi</li></ul></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <div class="box">
+    <h2>Let’s build something together.</h2>
+    <p>I’m open to Angular, Full Stack and Python developer roles, especially on AI-powered applications. I’m based in Trivandrum, Kerala, and available to join immediately.</p>
+    <div class="row">
+      <a class="btn" href="mailto:joshnaju97@gmail.com">joshnaju97@gmail.com</a>
+      <a class="btn o" href="https://www.linkedin.com/in/joshnaju" rel="noopener">LinkedIn</a>
+      <a class="btn o" href="https://github.com/Joshnaju" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</div></section>
+<footer><div class="wrap">Joshna J U · Trivandrum, Kerala, India</div></footer>
+</body>
+</html>
