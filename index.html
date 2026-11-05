@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joshna J U · Full Stack &amp; AI Developer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#FAF8F5;--surf:#fff;--surf2:#F1EDE7;--fg:#16142B;--mut:#5E5B72;--line:#E4DFD6;--acc:#5B3DF5;--acc2:#FF5C8A;--soft:#EEEAFF;--hero1:#16142B;--hero2:#2B1B6B;
+--d:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;--b:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--m:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E0D1A;--surf:#171527;--surf2:#201D35;--fg:#F0EEFA;--mut:#A9A5C2;--line:#2A2742;--acc:#9D8BFF;--soft:#241F4A;--hero1:#0A0914;--hero2:#1E1452;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E0D1A;--surf:#171527;--surf2:#201D35;--fg:#F0EEFA;--mut:#A9A5C2;--line:#2A2742;--acc:#9D8BFF;--soft:#241F4A;--hero1:#0A0914;--hero2:#1E1452;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.6 var(--b);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--hero1)}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--acc2);outline-offset:3px;border-radius:4px}
+.w{max-width:1080px;margin:0 auto;padding:0 max(18px,env(safe-area-inset-left,0px))}
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--hero1);color:#fff}
+.nr{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:12px}
+.logo{font:700 1.1rem var(--d);text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo i{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--acc),var(--acc2));font:700 .8rem var(--d);font-style:normal}
+.links{display:flex;gap:4px 18px;flex-wrap:wrap;font:.76rem var(--m);align-items:center}
+.links a{text-decoration:none;opacity:.78}.links a:hover{opacity:1;color:#FFB3C9}
+.tb{font:.72rem var(--m);color:#fff;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:4px 9px;cursor:pointer}
+/* hero */
+.hero{background:radial-gradient(900px 420px at 85% -10%,rgba(255,92,138,.35),transparent 60%),radial-gradient(700px 400px at 0% 100%,rgba(91,61,245,.5),transparent 60%),linear-gradient(160deg,var(--hero1),var(--hero2));color:#fff;overflow:hidden}
+.hg{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;padding-block:clamp(44px,8vw,96px)}
+.pill{display:inline-flex;align-items:center;gap:8px;font:.74rem var(--m);padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;background:rgba(255,255,255,.07);margin-bottom:20px}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:#5CF0A8;box-shadow:0 0 0 4px rgba(92,240,168,.2)}
+h1{font:800 clamp(3rem,9vw,6.4rem)/.92 var(--d);letter-spacing:-.04em;margin:0 0 16px}
+h1 span{background:linear-gradient(90deg,#A99BFF,#FF8FB1);-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font:500 clamp(1rem,2.4vw,1.35rem)/1.4 var(--m);margin:0 0 14px;min-height:1.5em;color:#E4DEFF}
+.role::after{content:"";display:inline-block;width:8px;height:1.1em;background:#FF8FB1;margin-left:3px;vertical-align:text-bottom;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.sub{max-width:46ch;color:rgba(255,255,255,.8);margin:0 0 28px;font-size:1.05rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:10px;border:1.5px solid transparent;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.b1{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#fff}
+.b2{border-color:rgba(255,255,255,.35);color:#fff}
+.stats{display:grid;gap:12px}
+.st{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:16px 20px;backdrop-filter:blur(6px)}
+.st b{display:block;font:800 2.4rem/1 var(--d);letter-spacing:-.03em;background:linear-gradient(90deg,#fff,#FFB3C9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.st span{font-size:.85rem;color:rgba(255,255,255,.75)}
+.mq{border-top:1px solid rgba(255,255,255,.14);padding-block:14px;font:.78rem var(--m);color:rgba(255,255,255,.7);display:flex;flex-wrap:wrap;gap:6px 24px}
+/* sections */
+section{padding-block:clamp(52px,8vw,96px)}
+.k{font:.76rem var(--m);letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin:0 0 10px;display:flex;align-items:center;gap:10px}
+.k::before{content:"";width:28px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+h2{font:750 clamp(1.9rem,4.6vw,3rem)/1.05 var(--d);letter-spacing:-.03em;margin:0 0 clamp(24px,4vw,40px);max-width:20ch;text-wrap:balance}
+.alt{background:var(--surf2)}
+/* about */
+.ag{display:grid;grid-template-columns:1.4fr 1fr;gap:36px 56px;align-items:start}
+.ag p{font-size:clamp(1.05rem,1.8vw,1.25rem);line-height:1.6;margin:0 0 1em}
+.facts{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:8px 20px;margin:0}
+.facts div{padding-block:12px;border-bottom:1px solid var(--line)}.facts div:last-child{border:0}
+.facts dt{font:.68rem var(--m);letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.facts dd{margin:2px 0 0;font-weight:500}
+/* projects */
+.f{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.f button{font:.78rem var(--m);padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:var(--surf);color:var(--mut);cursor:pointer}
+.f button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
+.pg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:24px;display:grid;gap:14px;align-content:start;position:relative;overflow:hidden;transition:transform .2s,border-color .2s}
+.card::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+.card:hover{transform:translateY(-4px);border-color:var(--acc)}
+.card[hidden]{display:none}
+.num{font:800 2.6rem/1 var(--d);color:var(--soft);letter-spacing:-.04em;-webkit-text-stroke:1px var(--acc)}
+.card h3{font:700 1.45rem/1.15 var(--d);letter-spacing:-.02em;margin:0}
+.card p{margin:0;color:var(--mut)}
+.hl{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.92rem}
+.hl li{padding-left:20px;position:relative}.hl li::before{content:"→";position:absolute;left:0;color:var(--acc2);font-weight:700}
+.tg{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}
+.tg li{font:.7rem var(--m);background:var(--soft);color:var(--acc);border-radius:6px;padding:3px 9px}
+/* timeline */
+.tl{display:grid;gap:22px;border-left:2px solid var(--line);margin-left:6px;padding-left:28px}
+.en{position:relative;background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:clamp(18px,3vw,28px)}
+.en::before{content:"";position:absolute;left:-37px;top:30px;width:14px;height:14px;border-radius:50%;background:var(--acc2);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--acc2)}
+.dt{font:.76rem var(--m);color:var(--acc2);font-weight:500}
+.en h3{font:700 1.4rem var(--d);letter-spacing:-.02em;margin:4px 0 2px}
+.org{color:var(--mut);margin:0 0 14px}
+.en ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.en li{padding-left:20px;position:relative}.en li::before{content:"";position:absolute;left:0;top:.7em;width:9px;height:2px;background:var(--acc)}
+/* skills */
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.sk{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:20px;display:grid;gap:12px;align-content:start}
+.sk h3{font:500 .76rem var(--m);letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin:0}
+.ch{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.ch li{font-size:.84rem;background:var(--surf2);border-radius:7px;padding:3px 10px;transition:background .2s,color .2s}
+.ch li:hover{background:var(--acc);color:#fff}
+/* education */
+.eg{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.ed{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.ed h3{font:600 1rem/1.35 var(--b);margin:6px 0 4px}.ed p{margin:0;color:var(--mut);font-size:.9rem}
+.lg{margin:26px 0 0;color:var(--mut)}
+/* contact */
+.ct{background:linear-gradient(160deg,var(--hero1),var(--hero2));color:#fff;text-align:center}
+.ct h2{margin-inline:auto;max-width:16ch}
+.em{display:inline-flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin-bottom:24px}
+.em b{font:700 clamp(1.3rem,4.5vw,2.4rem) var(--d);letter-spacing:-.02em;overflow-wrap:anywhere}
+.cp{font:.76rem var(--m);color:#fff;background:transparent;border:1px solid rgba(255,255,255,.35);border-radius:8px;padding:7px 14px;cursor:pointer}
+.ct .btns{justify-content:center}
+footer{background:var(--hero1);color:rgba(255,255,255,.6);font:.74rem var(--m);text-align:center;padding:20px 0}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.js .rv.in{opacity:1;transform:none}
+@media(max-width:860px){.hg,.ag,.pg{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:repeat(3,1fr)}.st b{font-size:1.7rem}.st{padding:12px}}
+@media(max-width:520px){.stats{grid-template-columns:1fr}.links a.hide{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="w nr">
+<a class="logo" href="#top"><i>JJ</i>Joshna J U</a>
+<div class="links"><a href="#about" class="hide">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button class="tb" id="tb" type="button">Dark</button></div>
+</div></nav>
+
+<header class="hero" id="top">
+<div class="w hg">
+<div>
+<span class="pill">Open to Full Stack, Angular, MEAN, MERN &amp; Python roles</span>
+<h1>Hi, I’m <span>Joshna.</span></h1>
+<p class="role" id="role">Full Stack Developer</p>
+<p class="sub">Two years of shipping Angular and Node.js products, now building AI-powered apps with Python, Django, React and RAG.</p>
+<div class="btns"><a class="btn b1" href="#projects">See my work</a><a class="btn b2" href="#contact">Get in touch</a></div>
+</div>
+<div class="stats">
+<div class="st"><b>2 yrs</b><span>professional experience</span></div>
+<div class="st"><b>3</b><span>production products shipped</span></div>
+<div class="st"><b>4</b><span>full-stack &amp; AI projects built</span></div>
+</div>
+</div>
+<div class="w mq"><span>Angular</span><span>React.js</span><span>Node.js</span><span>Django</span><span>MongoDB</span><span>MySQL</span><span>RAG</span><span>LangChain</span></div>
+</header>
+
+<main>
+<section id="about"><div class="w ag">
+<div class="rv"><p class="k">About</p><h2>Builder of web apps that do real work.</h2>
+<p>I’m a full stack developer who spent two years building production apps with Angular, Node.js, Express.js and MongoDB, covering REST APIs, authentication, testing and Agile delivery.</p>
+<p>Today I’m adding Python, Django and React to the mix, and building AI features like retrieval-augmented chatbots and agent workflows that stay grounded in real documents.</p></div>
+<dl class="facts rv">
+<div><dt>Based in</dt><dd>Trivandrum, Kerala</dd></div>
+<div><dt>Looking for</dt><dd>Full Stack · Angular · MEAN · MERN · Python</dd></div>
+<div><dt>Focus</dt><dd>AI-powered web applications</dd></div>
+<div><dt>Languages</dt><dd>English, Tamil, Malayalam, Hindi</dd></div>
+</dl></div></section>
+
+<section id="projects" class="alt"><div class="w">
+<p class="k">Projects</p><h2>Things I’ve built.</h2>
+<div class="f" id="f" role="group" aria-label="Filter projects">
+<button type="button" data-c="all" aria-pressed="true">All</button><button type="button" data-c="ai" aria-pressed="false">AI &amp; RAG</button><button type="button" data-c="app" aria-pressed="false">Full stack apps</button></div>
+<div class="pg">
+<article class="card rv" data-c="ai"><span class="num">01</span><h3>AI Study Assistant</h3>
+<p>Upload your notes and ask questions about them, with answers grounded in your own material.</p>
+<ul class="hl"><li>PDF, TXT and DOCX upload with chunking, embeddings and semantic search</li><li>Agentic workflow that picks tools to search your documents</li><li>Chat history, summaries and MCQ generation, behind JWT login</li></ul>
+<ul class="tg"><li>React.js</li><li>Django REST</li><li>RAG</li><li>ChromaDB</li><li>OpenAI API</li><li>Agentic AI</li></ul></article>
+<article class="card rv" data-c="ai"><span class="num">02</span><h3>Chatvocate</h3>
+<p>A legal assistant that answers questions on the Indian Penal Code using the actual sections.</p>
+<ul class="hl"><li>Retrieves relevant IPC sections from ChromaDB, then generates grounded answers</li><li>React chat interface on a Django REST backend</li><li>Conversation memory for follow-up questions</li></ul>
+<ul class="tg"><li>React.js</li><li>Django REST</li><li>RAG</li><li>ChromaDB</li><li>OpenAI API</li></ul></article>
+<article class="card rv" data-c="app"><span class="num">03</span><h3>Healthcare Management Portal</h3>
+<p>A hospital system where each department works in its own module behind secure sign-in.</p>
+<ul class="hl"><li>Doctor, Receptionist, Pharmacy and Laboratory modules</li><li>JWT authentication with role-based access</li><li>REST APIs and React components for every workflow</li></ul>
+<ul class="tg"><li>Python</li><li>Django REST</li><li>React.js</li><li>MySQL</li><li>JWT</li></ul></article>
+<article class="card rv" data-c="app"><span class="num">04</span><h3>Workforce Administration Portal</h3>
+<p>An HR portal for managing employees, projects and departments.</p>
+<ul class="hl"><li>Full create, edit and delete interfaces for 3 entities</li><li>JWT-secured REST APIs</li><li>Automated unit tests with the Django Test library</li></ul>
+<ul class="tg"><li>Python</li><li>Django REST</li><li>React.js</li><li>MySQL</li><li>CI/CD</li></ul></article>
+</div>
+<p style="margin-top:24px">More code on <a href="https://github.com/Joshnaju" target="_blank" rel="noopener"><b>github.com/Joshnaju</b></a></p>
+</div></section>
+
+<section id="experience"><div class="w">
+<p class="k">Experience</p><h2>Shipped in production, then levelled up.</h2>
+<div class="tl">
+<div class="en rv"><span class="dt">05/2026 – 10/2026</span><h3>Python Full Stack + Data Science &amp; GenAI</h3><p class="org">Faith InfoTech Academy · Technopark, Trivandrum</p>
+<ul><li>Built four projects: AI Study Assistant, Chatvocate, Healthcare Portal and Workforce Portal.</li><li>Learned Django, Django REST Framework, React.js and MySQL through project work.</li><li>Added RAG, LangChain, ChromaDB and agentic tool use to my toolkit.</li></ul></div>
+<div class="en rv"><span class="dt">02/2022 – 10/2023</span><h3>Software Engineer</h3><p class="org">Adroitminds Software Labs · Technopark, Trivandrum</p>
+<ul><li>Shipped FCS Compliance Tracker, YourCrew and a church engagement platform on Angular, Node.js, Express.js and MongoDB.</li><li>Built the Angular admin CMS for videos, podcasts, announcements and daily messages.</li><li>Added real-time chat and notifications across the Angular frontend and Node.js backend.</li><li>Integrated the Vimeo API for video uploads and stored audio on AWS S3.</li><li>Secured member and admin access with role-based authorization on Express.js APIs.</li><li>Merged crew and user collections into one users collection, simplifying the data model.</li><li>Generated downloadable PDFs on the server and tested key endpoints in Postman.</li></ul></div>
+</div></div></section>
+
+<section id="skills" class="alt"><div class="w">
+<p class="k">Skills</p><h2>My toolkit.</h2>
+<div class="sg">
+<div class="sk rv"><h3>Frontend</h3><ul class="ch"><li>Angular</li><li>React.js</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Tailwind</li><li>Bootstrap</li><li>Angular Material</li><li>PrimeNG</li></ul></div>
+<div class="sk rv"><h3>Backend</h3><ul class="ch"><li>Node.js</li><li>Express.js</li><li>Python</li><li>Django</li><li>Django REST</li><li>REST APIs</li><li>JWT</li></ul></div>
+<div class="sk rv"><h3>Databases</h3><ul class="ch"><li>MongoDB</li><li>MySQL</li><li>SQLite</li></ul></div>
+<div class="sk rv"><h3>Generative AI</h3><ul class="ch"><li>RAG</li><li>LangChain</li><li>ChromaDB</li><li>NLP</li><li>Agentic AI</li><li>OpenAI API</li></ul></div>
+<div class="sk rv"><h3>Data science</h3><ul class="ch"><li>NumPy</li><li>pandas</li><li>scikit-learn</li><li>TensorFlow/Keras</li><li>PyTorch</li><li>Matplotlib</li><li>Seaborn</li><li>Power BI</li></ul></div>
+<div class="sk rv"><h3>Cloud &amp; tools</h3><ul class="ch"><li>AWS (EC2, S3, RDS)</li><li>Git</li><li>GitHub</li><li>GitLab</li><li>Jira</li><li>ClickUp</li><li>Postman</li></ul></div>
+</div></div></section>
+
+<section id="education"><div class="w">
+<p class="k">Education</p><h2>Degree &amp; certifications.</h2>
+<div class="eg">
+<div class="ed rv"><span class="dt">07/2015 – 04/2019</span><h3>B.E. Electronics and Communication Engineering</h3><p>Anna University, Nagercoil · CGPA 7.9</p></div>
+<div class="ed rv"><span class="dt">05/2026 – 10/2026</span><h3>Python Full Stack + Data Science &amp; GenAI with Agentic AI</h3><p>Faith InfoTech Academy, Trivandrum</p></div>
+<div class="ed rv"><span class="dt">07/2021 – 12/2021</span><h3>Frontend Development using Angular</h3><p>MashupStack · built a forum application</p></div>
+<div class="ed rv"><span class="dt">07/2019 – 09/2019</span><h3>.NET Technologies</h3><p>CDAC · built an online shopping website</p></div>
+</div>
+<p class="lg">Languages: English, Tamil, Malayalam, Hindi</p>
+</div></section>
+
+<section class="ct" id="contact"><div class="w">
+<p class="k" style="justify-content:center;color:#FFB3C9">Contact</p>
+<h2>Let’s build something together.</h2>
+<div class="em"><b id="em">joshnaju97@gmail.com</b><button class="cp" id="cp" type="button">Copy</button></div>
+<div class="btns"><a class="btn b2" href="https://www.linkedin.com/in/joshnaju" target="_blank" rel="noopener">LinkedIn</a><a class="btn b2" href="https://github.com/Joshnaju" target="_blank" rel="noopener">GitHub</a></div>
+</div></section>
+</main>
+<footer>© 2026 Joshna J U · Trivandrum, Kerala</footer>
+
+<script>
+(function(){
+var d=document,r=d.documentElement,tb=d.getElementById("tb");
+function cur(){return r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}
+function lab(){tb.textContent=cur()==="dark"?"Light":"Dark"}
+try{var s=localStorage.getItem("jju-theme");if(s==="dark"||s==="light")r.setAttribute("data-theme",s)}catch(e){}
+lab();
+tb.onclick=function(){var n=cur()==="dark"?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("jju-theme",n)}catch(e){}lab()};
+/* project filter */
+var bs=d.querySelectorAll("#f button"),cs=d.querySelectorAll(".card");
+Array.prototype.forEach.call(bs,function(b){b.onclick=function(){
+Array.prototype.forEach.call(bs,function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});
+Array.prototype.forEach.call(cs,function(c){c.hidden=!(b.dataset.c==="all"||c.dataset.c===b.dataset.c)})}});
+/* copy email */
+var cp=d.getElementById("cp"),em=d.getElementById("em");
+cp.onclick=function(){var ok=function(){cp.textContent="Copied";setTimeout(function(){cp.textContent="Copy"},1800)};
+try{navigator.clipboard.writeText(em.textContent).then(ok,function(){cp.textContent="Select + copy"})}catch(e){cp.textContent="Select + copy"}};
+if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+/* scroll reveal */
+if("IntersectionObserver" in window){r.classList.add("js");
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+Array.prototype.forEach.call(d.querySelectorAll(".rv"),function(x){io.observe(x)})}
+/* rotating role */
+var roles=["Full Stack Developer","Angular & MERN Developer","Python & Django Developer","GenAI & RAG Builder"],ri=0,el=d.getElementById("role");
+function typ(t,i){el.textContent=t.slice(0,i);if(i<t.length)setTimeout(function(){typ(t,i+1)},45);else setTimeout(function(){ri=(ri+1)%roles.length;del(roles[ri===0?roles.length-1:ri-1],roles[ri].length)},1800)}
+function del(t,i){el.textContent=t.slice(0,i);if(i>0)setTimeout(function(){del(t,i-1)},22);else typ(roles[ri],1)}
+setTimeout(function(){del(roles[0],roles[0].length)},1600);
+})();
+</script>
+</body>
+</html>
